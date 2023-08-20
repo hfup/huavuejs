@@ -1,0 +1,25 @@
+{
+  "name": "huavuejs",
+  "version": "1.0.5",
+  "description": "fixed some bugs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "huangfei",
+  "license": "ISC",
+  "dependencies": {
+    "@vue/runtime-core": "^3.3.4",
+    "axios": "^1.4.0",
+    "exceljs": "^4.3.0",
+    "huavuejs": "^1.0.1",
+    "js-md5": "^0.7.3",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.22.10",
+    "@types/js-md5": "^0.7.0"
+  }
+}
