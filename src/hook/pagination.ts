@@ -1,5 +1,5 @@
-import type {Ref} from "vue";
-import {ref} from "vue";
+import type {Ref} from "@vue/runtime-core";
+import {ref} from "@vue/runtime-core";
 import type {PaginationOption} from "../request";
 import {post} from "../request";
 
