@@ -1,0 +1,2 @@
+import {post} from "./index"
+

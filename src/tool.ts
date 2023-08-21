@@ -30,4 +30,5 @@ function isIp(ip:string):boolean {
     return /^(\d{1,3}\.){3}\d{1,3}$/.test(ip)
 }
 
-export {isMobile,isNumber,isEmail,isNumOrLetter,isChinese,isIdCard,isUrl,isIp}
+const tool={isMobile,isNumber,isEmail,isNumOrLetter,isChinese,isIdCard,isUrl,isIp}
+export default tool

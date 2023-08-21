@@ -78,12 +78,14 @@ async function request<R=any,Q=any>(opt:RequestOption<Q>):Promise<JsonResult<R>>
             header['user-token'] = loginInfo.token
         }catch (e){
             // 跳转登录页面
+            if (!getConfig().login_page_path || getConfig().login_page_path === '') {
+                throw new Error('未配置登录页面地址')
+            }
             window.location.href = getConfig().login_page_path
             return Promise.resolve({err_code: 4001, message: '未登录'})
         }
     }
     return new Promise<JsonResult<R>>((resolve, reject) => {
-
         let isCache = opt.isCache ?? false
         let cacheKey = getRequestKey(opt)
         if (isCache) {

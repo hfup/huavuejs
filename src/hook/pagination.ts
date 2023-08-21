@@ -51,6 +51,6 @@ function usePagination<R=any,Q=any>():PaginationHook<R,Q> {
         delItem
     }
 }
-
+export {usePagination}
 export type {PaginationHook}
 
