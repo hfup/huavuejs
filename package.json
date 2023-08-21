@@ -1,6 +1,6 @@
 {
   "name": "huawebjs",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "description": "vue3 js工具库",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
